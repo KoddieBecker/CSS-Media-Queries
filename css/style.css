@@ -1,0 +1,127 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dadada;
+  margin: 0 1% 0 1%;
+  font-size: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibre', 'Trebuchet MS', sans-serif;
+}
+
+section {
+  margin: 1% 0;
+  width: 90%;
+  display: inline-block;
+  /* position: absolute; */
+  /* display: inline-block; */
+  /* align-items: center; */
+  /* background-position: center;   */
+   /* align-items: center; */
+}
+
+
+
+.modern-luxury h1 {
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 15px 0 10px 0;
+  width: 100%;  /* NEED THIS or all the headings are on top of each other */
+  text-align: center;
+  /* position: absolute;*/
+  /* left: 50%;
+  transform: translate(-50%, -50%);  */
+} 
+
+/* div {
+  /* float: left; */
+  /* margin: 2% 2%;   Wouldn't maintain margins as it changed screen size*/
+  /* width: 80%; */
+  /* padding: 20px 25px; 
+} */
+
+.preview {
+  /* background-image: url("../images/baku.jpg"),  DOESN'T WORK!!!!!
+      url("../images/london.png"),
+      url("../images/madrid.jpg"),
+      url("../images/rome.jpg"); */
+  /* display: inline-flex; */ 
+  /* position: relative; */
+  background-position: 0 0, center;
+  display: inline-block;
+  margin: 1% 1%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+
+  /* align-items: center; */
+  
+  /* padding: 20px 25px;  Padding doesn't work. Following div margins */
+  
+  width: 20em; /* Size of the image box */
+  height: 20em;
+}
+
+.preview.baku {
+  background-image: url("../images/baku.jpg");
+  background-position: left;
+}
+
+.preview.baku h1 {
+  font-size: 1.2em;
+  
+    /* position: absolute; */
+     top: 8px; 
+     left: 16px 
+}
+
+.preview.london {
+  background-image: url("../images/london.png");
+}
+
+.preview.london h1 {
+  font-size: 1.2em;
+  top: 8px;
+  left: 8px;
+}
+
+.preview.madrid {
+  background-image: url("../images/madrid.jpg");
+}
+
+.preview.madrid h1 {
+  font-size: 1.2em;
+  top: 8px;
+  left: 8px;
+}
+
+
+
+.preview.rome h1 {
+  font-size: 1.2em;
+  top: 8px;
+  left: 8px;
+}
+
+.preview.rome {
+  background-image: url("../images/rome.jpg");
+}
+
+
+
+@media screen and (min-width: 575px){
+  div {
+   /* margin: auto; */
+   width: 80%;
+   /* font-size: 75% */
+ }
+}
+
+@media screen and (min-width: 991px){
+  div {
+    /* margin: auto; */
+    width: 95%;
+    font-size: 100%
+  }
+}
